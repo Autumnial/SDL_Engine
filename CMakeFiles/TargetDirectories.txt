@@ -1,0 +1,3 @@
+/media/cel/lil bit o storag/dev/c++/colon three/build/CMakeFiles/SDL_test.dir
+/media/cel/lil bit o storag/dev/c++/colon three/build/CMakeFiles/edit_cache.dir
+/media/cel/lil bit o storag/dev/c++/colon three/build/CMakeFiles/rebuild_cache.dir

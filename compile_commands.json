@@ -1,0 +1,26 @@
+[
+{
+  "directory": "/media/cel/lil bit o storag/dev/c++/colon three/build",
+  "command": "/usr/bin/c++  -I\"/media/cel/lil bit o storag/dev/c++/colon three/src/include\" -std=gnu++23 -ggdb -O0 -o CMakeFiles/SDL_test.dir/src/Scene.cpp.o -c \"/media/cel/lil bit o storag/dev/c++/colon three/src/Scene.cpp\"",
+  "file": "/media/cel/lil bit o storag/dev/c++/colon three/src/Scene.cpp",
+  "output": "CMakeFiles/SDL_test.dir/src/Scene.cpp.o"
+},
+{
+  "directory": "/media/cel/lil bit o storag/dev/c++/colon three/build",
+  "command": "/usr/bin/c++  -I\"/media/cel/lil bit o storag/dev/c++/colon three/src/include\" -std=gnu++23 -ggdb -O0 -o CMakeFiles/SDL_test.dir/src/Input.cpp.o -c \"/media/cel/lil bit o storag/dev/c++/colon three/src/Input.cpp\"",
+  "file": "/media/cel/lil bit o storag/dev/c++/colon three/src/Input.cpp",
+  "output": "CMakeFiles/SDL_test.dir/src/Input.cpp.o"
+},
+{
+  "directory": "/media/cel/lil bit o storag/dev/c++/colon three/build",
+  "command": "/usr/bin/c++  -I\"/media/cel/lil bit o storag/dev/c++/colon three/src/include\" -std=gnu++23 -ggdb -O0 -o CMakeFiles/SDL_test.dir/src/Game.cpp.o -c \"/media/cel/lil bit o storag/dev/c++/colon three/src/Game.cpp\"",
+  "file": "/media/cel/lil bit o storag/dev/c++/colon three/src/Game.cpp",
+  "output": "CMakeFiles/SDL_test.dir/src/Game.cpp.o"
+},
+{
+  "directory": "/media/cel/lil bit o storag/dev/c++/colon three/build",
+  "command": "/usr/bin/c++  -I\"/media/cel/lil bit o storag/dev/c++/colon three/src/include\" -std=gnu++23 -ggdb -O0 -o CMakeFiles/SDL_test.dir/src/main.cpp.o -c \"/media/cel/lil bit o storag/dev/c++/colon three/src/main.cpp\"",
+  "file": "/media/cel/lil bit o storag/dev/c++/colon three/src/main.cpp",
+  "output": "CMakeFiles/SDL_test.dir/src/main.cpp.o"
+}
+]
