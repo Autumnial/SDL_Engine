@@ -1,1 +1,0 @@
-/usr/bin/c++ "CMakeFiles/Test-Math.dir/src/test.cpp.o" -o ../../Test-Math
