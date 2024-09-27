@@ -8,9 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/media/cel/lil bit o storag/dev/c++/colon three/src/Game.cpp" "CMakeFiles/SDL_test.dir/src/Game.cpp.o" "gcc" "CMakeFiles/SDL_test.dir/src/Game.cpp.o.d"
-  "/media/cel/lil bit o storag/dev/c++/colon three/src/Input.cpp" "CMakeFiles/SDL_test.dir/src/Input.cpp.o" "gcc" "CMakeFiles/SDL_test.dir/src/Input.cpp.o.d"
-  "/media/cel/lil bit o storag/dev/c++/colon three/src/Scene.cpp" "CMakeFiles/SDL_test.dir/src/Scene.cpp.o" "gcc" "CMakeFiles/SDL_test.dir/src/Scene.cpp.o.d"
+  "/media/cel/lil bit o storag/dev/c++/colon three/src/TestScene1.cpp" "CMakeFiles/SDL_test.dir/src/TestScene1.cpp.o" "gcc" "CMakeFiles/SDL_test.dir/src/TestScene1.cpp.o.d"
   "/media/cel/lil bit o storag/dev/c++/colon three/src/main.cpp" "CMakeFiles/SDL_test.dir/src/main.cpp.o" "gcc" "CMakeFiles/SDL_test.dir/src/main.cpp.o.d"
   )
 

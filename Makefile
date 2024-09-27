@@ -129,77 +129,55 @@ SDL_test/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_test.dir/build.make CMakeFiles/SDL_test.dir/build
 .PHONY : SDL_test/fast
 
-src/Game.o: src/Game.cpp.o
-.PHONY : src/Game.o
+#=============================================================================
+# Target rules for targets named Engine
+
+# Build rule for target.
+Engine: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Engine
+.PHONY : Engine
+
+# fast build rule for target.
+Engine/fast:
+	$(MAKE) $(MAKESILENT) -f Engine/CMakeFiles/Engine.dir/build.make Engine/CMakeFiles/Engine.dir/build
+.PHONY : Engine/fast
+
+#=============================================================================
+# Target rules for targets named Test-Math
+
+# Build rule for target.
+Test-Math: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Test-Math
+.PHONY : Test-Math
+
+# fast build rule for target.
+Test-Math/fast:
+	$(MAKE) $(MAKESILENT) -f Engine/Math/CMakeFiles/Test-Math.dir/build.make Engine/Math/CMakeFiles/Test-Math.dir/build
+.PHONY : Test-Math/fast
+
+src/TestScene1.o: src/TestScene1.cpp.o
+.PHONY : src/TestScene1.o
 
 # target to build an object file
-src/Game.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_test.dir/build.make CMakeFiles/SDL_test.dir/src/Game.cpp.o
-.PHONY : src/Game.cpp.o
+src/TestScene1.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_test.dir/build.make CMakeFiles/SDL_test.dir/src/TestScene1.cpp.o
+.PHONY : src/TestScene1.cpp.o
 
-src/Game.i: src/Game.cpp.i
-.PHONY : src/Game.i
-
-# target to preprocess a source file
-src/Game.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_test.dir/build.make CMakeFiles/SDL_test.dir/src/Game.cpp.i
-.PHONY : src/Game.cpp.i
-
-src/Game.s: src/Game.cpp.s
-.PHONY : src/Game.s
-
-# target to generate assembly for a file
-src/Game.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_test.dir/build.make CMakeFiles/SDL_test.dir/src/Game.cpp.s
-.PHONY : src/Game.cpp.s
-
-src/Input.o: src/Input.cpp.o
-.PHONY : src/Input.o
-
-# target to build an object file
-src/Input.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_test.dir/build.make CMakeFiles/SDL_test.dir/src/Input.cpp.o
-.PHONY : src/Input.cpp.o
-
-src/Input.i: src/Input.cpp.i
-.PHONY : src/Input.i
+src/TestScene1.i: src/TestScene1.cpp.i
+.PHONY : src/TestScene1.i
 
 # target to preprocess a source file
-src/Input.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_test.dir/build.make CMakeFiles/SDL_test.dir/src/Input.cpp.i
-.PHONY : src/Input.cpp.i
+src/TestScene1.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_test.dir/build.make CMakeFiles/SDL_test.dir/src/TestScene1.cpp.i
+.PHONY : src/TestScene1.cpp.i
 
-src/Input.s: src/Input.cpp.s
-.PHONY : src/Input.s
-
-# target to generate assembly for a file
-src/Input.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_test.dir/build.make CMakeFiles/SDL_test.dir/src/Input.cpp.s
-.PHONY : src/Input.cpp.s
-
-src/Scene.o: src/Scene.cpp.o
-.PHONY : src/Scene.o
-
-# target to build an object file
-src/Scene.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_test.dir/build.make CMakeFiles/SDL_test.dir/src/Scene.cpp.o
-.PHONY : src/Scene.cpp.o
-
-src/Scene.i: src/Scene.cpp.i
-.PHONY : src/Scene.i
-
-# target to preprocess a source file
-src/Scene.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_test.dir/build.make CMakeFiles/SDL_test.dir/src/Scene.cpp.i
-.PHONY : src/Scene.cpp.i
-
-src/Scene.s: src/Scene.cpp.s
-.PHONY : src/Scene.s
+src/TestScene1.s: src/TestScene1.cpp.s
+.PHONY : src/TestScene1.s
 
 # target to generate assembly for a file
-src/Scene.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_test.dir/build.make CMakeFiles/SDL_test.dir/src/Scene.cpp.s
-.PHONY : src/Scene.cpp.s
+src/TestScene1.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_test.dir/build.make CMakeFiles/SDL_test.dir/src/TestScene1.cpp.s
+.PHONY : src/TestScene1.cpp.s
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
@@ -233,16 +211,12 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... Engine"
 	@echo "... SDL_test"
-	@echo "... src/Game.o"
-	@echo "... src/Game.i"
-	@echo "... src/Game.s"
-	@echo "... src/Input.o"
-	@echo "... src/Input.i"
-	@echo "... src/Input.s"
-	@echo "... src/Scene.o"
-	@echo "... src/Scene.i"
-	@echo "... src/Scene.s"
+	@echo "... Test-Math"
+	@echo "... src/TestScene1.o"
+	@echo "... src/TestScene1.i"
+	@echo "... src/TestScene1.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

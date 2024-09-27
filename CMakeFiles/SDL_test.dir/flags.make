@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I"/media/cel/lil bit o storag/dev/c++/colon three/src/include"
+CXX_INCLUDES = -I"/media/cel/lil bit o storag/dev/c++/colon three/Engine/src" -I"/media/cel/lil bit o storag/dev/c++/colon three/src/include"
 
 CXX_FLAGS = -std=gnu++23 -ggdb -O0
 

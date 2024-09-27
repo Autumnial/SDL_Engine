@@ -69,52 +69,24 @@ include CMakeFiles/SDL_test.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/SDL_test.dir/flags.make
 
-CMakeFiles/SDL_test.dir/src/Scene.cpp.o: CMakeFiles/SDL_test.dir/flags.make
-CMakeFiles/SDL_test.dir/src/Scene.cpp.o: /media/cel/lil\ bit\ o\ storag/dev/c++/colon\ three/src/Scene.cpp
-CMakeFiles/SDL_test.dir/src/Scene.cpp.o: CMakeFiles/SDL_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/cel/lil bit o storag/dev/c++/colon three/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/SDL_test.dir/src/Scene.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_test.dir/src/Scene.cpp.o -MF CMakeFiles/SDL_test.dir/src/Scene.cpp.o.d -o CMakeFiles/SDL_test.dir/src/Scene.cpp.o -c "/media/cel/lil bit o storag/dev/c++/colon three/src/Scene.cpp"
+CMakeFiles/SDL_test.dir/src/TestScene1.cpp.o: CMakeFiles/SDL_test.dir/flags.make
+CMakeFiles/SDL_test.dir/src/TestScene1.cpp.o: /media/cel/lil\ bit\ o\ storag/dev/c++/colon\ three/src/TestScene1.cpp
+CMakeFiles/SDL_test.dir/src/TestScene1.cpp.o: CMakeFiles/SDL_test.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/cel/lil bit o storag/dev/c++/colon three/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/SDL_test.dir/src/TestScene1.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_test.dir/src/TestScene1.cpp.o -MF CMakeFiles/SDL_test.dir/src/TestScene1.cpp.o.d -o CMakeFiles/SDL_test.dir/src/TestScene1.cpp.o -c "/media/cel/lil bit o storag/dev/c++/colon three/src/TestScene1.cpp"
 
-CMakeFiles/SDL_test.dir/src/Scene.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/SDL_test.dir/src/Scene.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/media/cel/lil bit o storag/dev/c++/colon three/src/Scene.cpp" > CMakeFiles/SDL_test.dir/src/Scene.cpp.i
+CMakeFiles/SDL_test.dir/src/TestScene1.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/SDL_test.dir/src/TestScene1.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/media/cel/lil bit o storag/dev/c++/colon three/src/TestScene1.cpp" > CMakeFiles/SDL_test.dir/src/TestScene1.cpp.i
 
-CMakeFiles/SDL_test.dir/src/Scene.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SDL_test.dir/src/Scene.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/media/cel/lil bit o storag/dev/c++/colon three/src/Scene.cpp" -o CMakeFiles/SDL_test.dir/src/Scene.cpp.s
-
-CMakeFiles/SDL_test.dir/src/Input.cpp.o: CMakeFiles/SDL_test.dir/flags.make
-CMakeFiles/SDL_test.dir/src/Input.cpp.o: /media/cel/lil\ bit\ o\ storag/dev/c++/colon\ three/src/Input.cpp
-CMakeFiles/SDL_test.dir/src/Input.cpp.o: CMakeFiles/SDL_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/cel/lil bit o storag/dev/c++/colon three/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/SDL_test.dir/src/Input.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_test.dir/src/Input.cpp.o -MF CMakeFiles/SDL_test.dir/src/Input.cpp.o.d -o CMakeFiles/SDL_test.dir/src/Input.cpp.o -c "/media/cel/lil bit o storag/dev/c++/colon three/src/Input.cpp"
-
-CMakeFiles/SDL_test.dir/src/Input.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/SDL_test.dir/src/Input.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/media/cel/lil bit o storag/dev/c++/colon three/src/Input.cpp" > CMakeFiles/SDL_test.dir/src/Input.cpp.i
-
-CMakeFiles/SDL_test.dir/src/Input.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SDL_test.dir/src/Input.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/media/cel/lil bit o storag/dev/c++/colon three/src/Input.cpp" -o CMakeFiles/SDL_test.dir/src/Input.cpp.s
-
-CMakeFiles/SDL_test.dir/src/Game.cpp.o: CMakeFiles/SDL_test.dir/flags.make
-CMakeFiles/SDL_test.dir/src/Game.cpp.o: /media/cel/lil\ bit\ o\ storag/dev/c++/colon\ three/src/Game.cpp
-CMakeFiles/SDL_test.dir/src/Game.cpp.o: CMakeFiles/SDL_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/cel/lil bit o storag/dev/c++/colon three/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/SDL_test.dir/src/Game.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_test.dir/src/Game.cpp.o -MF CMakeFiles/SDL_test.dir/src/Game.cpp.o.d -o CMakeFiles/SDL_test.dir/src/Game.cpp.o -c "/media/cel/lil bit o storag/dev/c++/colon three/src/Game.cpp"
-
-CMakeFiles/SDL_test.dir/src/Game.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/SDL_test.dir/src/Game.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/media/cel/lil bit o storag/dev/c++/colon three/src/Game.cpp" > CMakeFiles/SDL_test.dir/src/Game.cpp.i
-
-CMakeFiles/SDL_test.dir/src/Game.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SDL_test.dir/src/Game.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/media/cel/lil bit o storag/dev/c++/colon three/src/Game.cpp" -o CMakeFiles/SDL_test.dir/src/Game.cpp.s
+CMakeFiles/SDL_test.dir/src/TestScene1.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SDL_test.dir/src/TestScene1.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/media/cel/lil bit o storag/dev/c++/colon three/src/TestScene1.cpp" -o CMakeFiles/SDL_test.dir/src/TestScene1.cpp.s
 
 CMakeFiles/SDL_test.dir/src/main.cpp.o: CMakeFiles/SDL_test.dir/flags.make
 CMakeFiles/SDL_test.dir/src/main.cpp.o: /media/cel/lil\ bit\ o\ storag/dev/c++/colon\ three/src/main.cpp
 CMakeFiles/SDL_test.dir/src/main.cpp.o: CMakeFiles/SDL_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/cel/lil bit o storag/dev/c++/colon three/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/SDL_test.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/media/cel/lil bit o storag/dev/c++/colon three/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/SDL_test.dir/src/main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_test.dir/src/main.cpp.o -MF CMakeFiles/SDL_test.dir/src/main.cpp.o.d -o CMakeFiles/SDL_test.dir/src/main.cpp.o -c "/media/cel/lil bit o storag/dev/c++/colon three/src/main.cpp"
 
 CMakeFiles/SDL_test.dir/src/main.cpp.i: cmake_force
@@ -127,21 +99,18 @@ CMakeFiles/SDL_test.dir/src/main.cpp.s: cmake_force
 
 # Object files for target SDL_test
 SDL_test_OBJECTS = \
-"CMakeFiles/SDL_test.dir/src/Scene.cpp.o" \
-"CMakeFiles/SDL_test.dir/src/Input.cpp.o" \
-"CMakeFiles/SDL_test.dir/src/Game.cpp.o" \
+"CMakeFiles/SDL_test.dir/src/TestScene1.cpp.o" \
 "CMakeFiles/SDL_test.dir/src/main.cpp.o"
 
 # External object files for target SDL_test
 SDL_test_EXTERNAL_OBJECTS =
 
-SDL_test: CMakeFiles/SDL_test.dir/src/Scene.cpp.o
-SDL_test: CMakeFiles/SDL_test.dir/src/Input.cpp.o
-SDL_test: CMakeFiles/SDL_test.dir/src/Game.cpp.o
+SDL_test: CMakeFiles/SDL_test.dir/src/TestScene1.cpp.o
 SDL_test: CMakeFiles/SDL_test.dir/src/main.cpp.o
 SDL_test: CMakeFiles/SDL_test.dir/build.make
+SDL_test: Engine/libEngine.a
 SDL_test: CMakeFiles/SDL_test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/media/cel/lil bit o storag/dev/c++/colon three/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable SDL_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/media/cel/lil bit o storag/dev/c++/colon three/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable SDL_test"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SDL_test.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

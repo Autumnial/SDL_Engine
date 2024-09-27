@@ -1,3 +1,9 @@
 /media/cel/lil bit o storag/dev/c++/colon three/build/CMakeFiles/SDL_test.dir
 /media/cel/lil bit o storag/dev/c++/colon three/build/CMakeFiles/edit_cache.dir
 /media/cel/lil bit o storag/dev/c++/colon three/build/CMakeFiles/rebuild_cache.dir
+/media/cel/lil bit o storag/dev/c++/colon three/build/Engine/CMakeFiles/Engine.dir
+/media/cel/lil bit o storag/dev/c++/colon three/build/Engine/CMakeFiles/edit_cache.dir
+/media/cel/lil bit o storag/dev/c++/colon three/build/Engine/CMakeFiles/rebuild_cache.dir
+/media/cel/lil bit o storag/dev/c++/colon three/build/Engine/Math/CMakeFiles/Test-Math.dir
+/media/cel/lil bit o storag/dev/c++/colon three/build/Engine/Math/CMakeFiles/edit_cache.dir
+/media/cel/lil bit o storag/dev/c++/colon three/build/Engine/Math/CMakeFiles/rebuild_cache.dir

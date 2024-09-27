@@ -1,0 +1,5 @@
+if(EXISTS "/media/cel/lil bit o storag/dev/c++/colon three/build/Engine/Math/MathTest[1]_tests.cmake")
+  include("/media/cel/lil bit o storag/dev/c++/colon three/build/Engine/Math/MathTest[1]_tests.cmake")
+else()
+  add_test(MathTest_NOT_BUILT MathTest_NOT_BUILT)
+endif()

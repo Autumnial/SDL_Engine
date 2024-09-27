@@ -1,0 +1,2 @@
+/usr/bin/ar qc libEngine.a CMakeFiles/Engine.dir/src/Scene.cpp.o CMakeFiles/Engine.dir/src/Input.cpp.o CMakeFiles/Engine.dir/src/Game.cpp.o
+/usr/bin/ranlib libEngine.a

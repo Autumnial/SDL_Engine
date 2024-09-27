@@ -8,6 +8,8 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
   "/media/cel/lil bit o storag/dev/c++/colon three/CMakeLists.txt"
+  "/media/cel/lil bit o storag/dev/c++/colon three/Engine/CMakeLists.txt"
+  "/media/cel/lil bit o storag/dev/c++/colon three/Engine/Math/CMakeLists.txt"
   "CMakeFiles/3.30.0/CMakeCCompiler.cmake"
   "CMakeFiles/3.30.0/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.30.0/CMakeSystem.cmake"
@@ -40,9 +42,13 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
+  "Engine/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "Engine/Math/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/SDL_test.dir/DependInfo.cmake"
+  "Engine/CMakeFiles/Engine.dir/DependInfo.cmake"
+  "Engine/Math/CMakeFiles/Test-Math.dir/DependInfo.cmake"
   )

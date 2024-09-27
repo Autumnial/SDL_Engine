@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/SDL_test.dir/src/Scene.cpp.o CMakeFiles/SDL_test.dir/src/Input.cpp.o CMakeFiles/SDL_test.dir/src/Game.cpp.o CMakeFiles/SDL_test.dir/src/main.cpp.o -o SDL_test   -L"/media/cel/lil bit o storag/dev/c++/colon three/lib"  -Wl,-rpath,"/media/cel/lil bit o storag/dev/c++/colon three/lib" -lSDL2
+/usr/bin/c++ CMakeFiles/SDL_test.dir/src/TestScene1.cpp.o CMakeFiles/SDL_test.dir/src/main.cpp.o -o SDL_test   -L"/media/cel/lil bit o storag/dev/c++/colon three/lib"  -Wl,-rpath,"/media/cel/lil bit o storag/dev/c++/colon three/lib" Engine/libEngine.a -lSDL2

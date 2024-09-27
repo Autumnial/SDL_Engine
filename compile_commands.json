@@ -1,26 +1,38 @@
 [
 {
   "directory": "/media/cel/lil bit o storag/dev/c++/colon three/build",
-  "command": "/usr/bin/c++  -I\"/media/cel/lil bit o storag/dev/c++/colon three/src/include\" -std=gnu++23 -ggdb -O0 -o CMakeFiles/SDL_test.dir/src/Scene.cpp.o -c \"/media/cel/lil bit o storag/dev/c++/colon three/src/Scene.cpp\"",
-  "file": "/media/cel/lil bit o storag/dev/c++/colon three/src/Scene.cpp",
-  "output": "CMakeFiles/SDL_test.dir/src/Scene.cpp.o"
+  "command": "/usr/bin/c++  -I\"/media/cel/lil bit o storag/dev/c++/colon three/Engine/src\" -I\"/media/cel/lil bit o storag/dev/c++/colon three/src/include\" -std=gnu++23 -ggdb -O0 -o CMakeFiles/SDL_test.dir/src/TestScene1.cpp.o -c \"/media/cel/lil bit o storag/dev/c++/colon three/src/TestScene1.cpp\"",
+  "file": "/media/cel/lil bit o storag/dev/c++/colon three/src/TestScene1.cpp",
+  "output": "CMakeFiles/SDL_test.dir/src/TestScene1.cpp.o"
 },
 {
   "directory": "/media/cel/lil bit o storag/dev/c++/colon three/build",
-  "command": "/usr/bin/c++  -I\"/media/cel/lil bit o storag/dev/c++/colon three/src/include\" -std=gnu++23 -ggdb -O0 -o CMakeFiles/SDL_test.dir/src/Input.cpp.o -c \"/media/cel/lil bit o storag/dev/c++/colon three/src/Input.cpp\"",
-  "file": "/media/cel/lil bit o storag/dev/c++/colon three/src/Input.cpp",
-  "output": "CMakeFiles/SDL_test.dir/src/Input.cpp.o"
-},
-{
-  "directory": "/media/cel/lil bit o storag/dev/c++/colon three/build",
-  "command": "/usr/bin/c++  -I\"/media/cel/lil bit o storag/dev/c++/colon three/src/include\" -std=gnu++23 -ggdb -O0 -o CMakeFiles/SDL_test.dir/src/Game.cpp.o -c \"/media/cel/lil bit o storag/dev/c++/colon three/src/Game.cpp\"",
-  "file": "/media/cel/lil bit o storag/dev/c++/colon three/src/Game.cpp",
-  "output": "CMakeFiles/SDL_test.dir/src/Game.cpp.o"
-},
-{
-  "directory": "/media/cel/lil bit o storag/dev/c++/colon three/build",
-  "command": "/usr/bin/c++  -I\"/media/cel/lil bit o storag/dev/c++/colon three/src/include\" -std=gnu++23 -ggdb -O0 -o CMakeFiles/SDL_test.dir/src/main.cpp.o -c \"/media/cel/lil bit o storag/dev/c++/colon three/src/main.cpp\"",
+  "command": "/usr/bin/c++  -I\"/media/cel/lil bit o storag/dev/c++/colon three/Engine/src\" -I\"/media/cel/lil bit o storag/dev/c++/colon three/src/include\" -std=gnu++23 -ggdb -O0 -o CMakeFiles/SDL_test.dir/src/main.cpp.o -c \"/media/cel/lil bit o storag/dev/c++/colon three/src/main.cpp\"",
   "file": "/media/cel/lil bit o storag/dev/c++/colon three/src/main.cpp",
   "output": "CMakeFiles/SDL_test.dir/src/main.cpp.o"
+},
+{
+  "directory": "/media/cel/lil bit o storag/dev/c++/colon three/build/Engine",
+  "command": "/usr/bin/c++   -std=gnu++23 -ggdb -O0 -o CMakeFiles/Engine.dir/src/Game.cpp.o -c \"/media/cel/lil bit o storag/dev/c++/colon three/Engine/src/Game.cpp\"",
+  "file": "/media/cel/lil bit o storag/dev/c++/colon three/Engine/src/Game.cpp",
+  "output": "Engine/CMakeFiles/Engine.dir/src/Game.cpp.o"
+},
+{
+  "directory": "/media/cel/lil bit o storag/dev/c++/colon three/build/Engine",
+  "command": "/usr/bin/c++   -std=gnu++23 -ggdb -O0 -o CMakeFiles/Engine.dir/src/Scene.cpp.o -c \"/media/cel/lil bit o storag/dev/c++/colon three/Engine/src/Scene.cpp\"",
+  "file": "/media/cel/lil bit o storag/dev/c++/colon three/Engine/src/Scene.cpp",
+  "output": "Engine/CMakeFiles/Engine.dir/src/Scene.cpp.o"
+},
+{
+  "directory": "/media/cel/lil bit o storag/dev/c++/colon three/build/Engine",
+  "command": "/usr/bin/c++   -std=gnu++23 -ggdb -O0 -o CMakeFiles/Engine.dir/src/Input.cpp.o -c \"/media/cel/lil bit o storag/dev/c++/colon three/Engine/src/Input.cpp\"",
+  "file": "/media/cel/lil bit o storag/dev/c++/colon three/Engine/src/Input.cpp",
+  "output": "Engine/CMakeFiles/Engine.dir/src/Input.cpp.o"
+},
+{
+  "directory": "/media/cel/lil bit o storag/dev/c++/colon three/build/Engine/Math",
+  "command": "/usr/bin/c++   -std=gnu++23 -ggdb -O0 -o CMakeFiles/Test-Math.dir/src/test.cpp.o -c \"/media/cel/lil bit o storag/dev/c++/colon three/Engine/Math/src/test.cpp\"",
+  "file": "/media/cel/lil bit o storag/dev/c++/colon three/Engine/Math/src/test.cpp",
+  "output": "Engine/Math/CMakeFiles/Test-Math.dir/src/test.cpp.o"
 }
 ]

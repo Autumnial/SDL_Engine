@@ -1,10 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/SDL_test.dir/src/Game.cpp.o"
-  "CMakeFiles/SDL_test.dir/src/Game.cpp.o.d"
-  "CMakeFiles/SDL_test.dir/src/Input.cpp.o"
-  "CMakeFiles/SDL_test.dir/src/Input.cpp.o.d"
-  "CMakeFiles/SDL_test.dir/src/Scene.cpp.o"
-  "CMakeFiles/SDL_test.dir/src/Scene.cpp.o.d"
+  "CMakeFiles/SDL_test.dir/src/TestScene1.cpp.o"
+  "CMakeFiles/SDL_test.dir/src/TestScene1.cpp.o.d"
   "CMakeFiles/SDL_test.dir/src/main.cpp.o"
   "CMakeFiles/SDL_test.dir/src/main.cpp.o.d"
   "SDL_test"

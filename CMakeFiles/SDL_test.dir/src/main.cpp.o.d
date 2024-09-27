@@ -1,8 +1,8 @@
 CMakeFiles/SDL_test.dir/src/main.cpp.o: \
  /media/cel/lil\ bit\ o\ storag/dev/c++/colon\ three/src/main.cpp \
  /usr/include/stdc-predef.h \
- /media/cel/lil\ bit\ o\ storag/dev/c++/colon\ three/src/Game.hpp \
- /media/cel/lil\ bit\ o\ storag/dev/c++/colon\ three/src/Scene.hpp \
+ /media/cel/lil\ bit\ o\ storag/dev/c++/colon\ three/Engine/src/Game.hpp \
+ /media/cel/lil\ bit\ o\ storag/dev/c++/colon\ three/Engine/src/Scene.hpp \
  /usr/include/c++/11/map /usr/include/c++/11/bits/stl_tree.h \
  /usr/include/c++/11/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
@@ -54,7 +54,7 @@ CMakeFiles/SDL_test.dir/src/main.cpp.o: \
  /usr/include/c++/11/bits/invoke.h \
  /usr/include/c++/11/bits/stl_multimap.h \
  /usr/include/c++/11/bits/erase_if.h \
- /media/cel/lil\ bit\ o\ storag/dev/c++/colon\ three/src/Input.hpp \
+ /media/cel/lil\ bit\ o\ storag/dev/c++/colon\ three/Engine/src/Input.hpp \
  /usr/include/SDL2/SDL_events.h /usr/include/SDL2/SDL_stdinc.h \
  /usr/include/SDL2/SDL_config.h \
  /usr/include/x86_64-linux-gnu/SDL2/_real_SDL_config.h \
@@ -191,107 +191,16 @@ CMakeFiles/SDL_test.dir/src/main.cpp.o: \
  /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
  /usr/include/c++/11/bits/charconv.h \
- /usr/include/c++/11/bits/basic_string.tcc /usr/include/SDL2/SDL_error.h \
- /usr/include/SDL2/SDL_pixels.h /usr/include/SDL2/SDL.h \
- /usr/include/SDL2/SDL_main.h /usr/include/SDL2/SDL_assert.h \
- /usr/include/SDL2/SDL_atomic.h /usr/include/SDL2/SDL_platform.h \
- /usr/include/SDL2/SDL_audio.h /usr/include/SDL2/SDL_mutex.h \
- /usr/include/SDL2/SDL_thread.h /usr/include/SDL2/SDL_clipboard.h \
- /usr/include/SDL2/SDL_cpuinfo.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/immintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/x86gprintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/ia32intrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/adxintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/bmiintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/bmi2intrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/cetintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/cldemoteintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/clflushoptintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/clwbintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/clzerointrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/enqcmdintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/fxsrintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/lzcntintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/lwpintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/movdirintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/mwaitintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/mwaitxintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/pconfigintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/popcntintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/pkuintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/rdseedintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/rtmintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/serializeintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/sgxintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/tbmintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/tsxldtrkintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/uintrintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/waitpkgintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/wbnoinvdintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/xsaveintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/xsavecintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/xsaveoptintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/xsavesintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/xtestintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/hresetintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/mmintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/xmmintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/mm_malloc.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/emmintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/pmmintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/tmmintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/smmintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/wmmintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/avxintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/avxvnniintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/avx2intrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512fintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512erintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512pfintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512cdintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vlintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512bwintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512dqintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vlbwintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vldqintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512ifmaintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512ifmavlintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vbmiintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vbmivlintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/avx5124fmapsintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/avx5124vnniwintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vpopcntdqintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vbmi2intrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vbmi2vlintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vnniintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vnnivlintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vpopcntdqvlintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512bitalgintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vp2intersectintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vp2intersectvlintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/shaintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/fmaintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/f16cintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/gfniintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/vaesintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/vpclmulqdqintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512bf16vlintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512bf16intrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/amxtileintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/amxint8intrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/amxbf16intrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/prfchwintrin.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/keylockerintrin.h \
- /usr/include/SDL2/SDL_events.h /usr/include/SDL2/SDL_filesystem.h \
- /usr/include/SDL2/SDL_haptic.h /usr/include/SDL2/SDL_hidapi.h \
- /usr/include/SDL2/SDL_hints.h /usr/include/SDL2/SDL_loadso.h \
- /usr/include/SDL2/SDL_log.h /usr/include/SDL2/SDL_messagebox.h \
- /usr/include/SDL2/SDL_metal.h /usr/include/SDL2/SDL_power.h \
- /usr/include/SDL2/SDL_render.h /usr/include/SDL2/SDL_shape.h \
- /usr/include/SDL2/SDL_system.h /usr/include/SDL2/SDL_timer.h \
- /usr/include/SDL2/SDL_version.h /usr/include/SDL2/SDL_locale.h \
- /usr/include/SDL2/SDL_misc.h \
+ /usr/include/c++/11/bits/basic_string.tcc \
  /media/cel/lil\ bit\ o\ storag/dev/c++/colon\ three/src/TestScene1.hpp \
+ /usr/include/unistd.h /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
+ /usr/include/x86_64-linux-gnu/bits/environments.h \
+ /usr/include/x86_64-linux-gnu/bits/confname.h \
+ /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
+ /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+ /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
+ /usr/include/linux/close_range.h \
+ /media/cel/lil\ bit\ o\ storag/dev/c++/colon\ three/src/TestScene2.hpp \
  /usr/include/c++/11/iostream /usr/include/c++/11/ostream \
  /usr/include/c++/11/ios /usr/include/c++/11/exception \
  /usr/include/c++/11/bits/exception_ptr.h \
@@ -313,38 +222,4 @@ CMakeFiles/SDL_test.dir/src/main.cpp.o: \
  /usr/include/c++/11/bits/locale_facets.tcc \
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
- /usr/include/c++/11/bits/istream.tcc /usr/include/unistd.h \
- /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
- /usr/include/x86_64-linux-gnu/bits/environments.h \
- /usr/include/x86_64-linux-gnu/bits/confname.h \
- /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
- /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
- /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
- /usr/include/linux/close_range.h \
- /media/cel/lil\ bit\ o\ storag/dev/c++/colon\ three/src/TestScene2.hpp \
- /usr/include/c++/11/thread /usr/include/c++/11/stop_token \
- /usr/include/c++/11/atomic /usr/include/c++/11/bits/atomic_base.h \
- /usr/include/c++/11/bits/atomic_lockfree_defines.h \
- /usr/include/c++/11/bits/atomic_wait.h /usr/include/c++/11/climits \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
- /usr/include/limits.h /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
- /usr/include/x86_64-linux-gnu/bits/local_lim.h \
- /usr/include/linux/limits.h \
- /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
- /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
- /usr/include/x86_64-linux-gnu/bits/uio_lim.h /usr/include/syscall.h \
- /usr/include/x86_64-linux-gnu/sys/syscall.h \
- /usr/include/x86_64-linux-gnu/asm/unistd.h \
- /usr/include/x86_64-linux-gnu/asm/unistd_64.h \
- /usr/include/x86_64-linux-gnu/bits/syscall.h \
- /usr/include/c++/11/bits/std_mutex.h \
- /usr/include/c++/11/bits/std_thread.h /usr/include/c++/11/bits/refwrap.h \
- /usr/include/c++/11/bits/unique_ptr.h /usr/include/c++/11/semaphore \
- /usr/include/c++/11/bits/semaphore_base.h \
- /usr/include/c++/11/bits/atomic_timed_wait.h \
- /usr/include/c++/11/bits/this_thread_sleep.h /usr/include/c++/11/chrono \
- /usr/include/c++/11/ratio /usr/include/c++/11/ctime \
- /usr/include/c++/11/bits/parse_numbers.h \
- /usr/include/x86_64-linux-gnu/sys/time.h /usr/include/semaphore.h \
- /usr/include/x86_64-linux-gnu/bits/semaphore.h
+ /usr/include/c++/11/bits/istream.tcc
