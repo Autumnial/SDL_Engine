@@ -5,6 +5,7 @@ Engine/CMakeFiles/Engine.dir/src/Game.cpp.o: /media/cel/lil\ bit\ o\ storag/dev/
   /media/cel/lil\ bit\ o\ storag/dev/c++/colon\ three/Engine/src/Game.hpp \
   /media/cel/lil\ bit\ o\ storag/dev/c++/colon\ three/Engine/src/Input.hpp \
   /media/cel/lil\ bit\ o\ storag/dev/c++/colon\ three/Engine/src/Scene.hpp \
+  /usr/include/Option.hpp \
   /usr/include/SDL2/SDL.h \
   /usr/include/SDL2/SDL_assert.h \
   /usr/include/SDL2/SDL_atomic.h \
@@ -95,6 +96,7 @@ Engine/CMakeFiles/Engine.dir/src/Game.cpp.o: /media/cel/lil\ bit\ o\ storag/dev/
   /usr/include/c++/11/bits/node_handle.h \
   /usr/include/c++/11/bits/ostream.tcc \
   /usr/include/c++/11/bits/ostream_insert.h \
+  /usr/include/c++/11/bits/parse_numbers.h \
   /usr/include/c++/11/bits/postypes.h \
   /usr/include/c++/11/bits/predefined_ops.h \
   /usr/include/c++/11/bits/ptr_traits.h \
@@ -125,6 +127,7 @@ Engine/CMakeFiles/Engine.dir/src/Game.cpp.o: /media/cel/lil\ bit\ o\ storag/dev/
   /usr/include/c++/11/bits/uses_allocator.h \
   /usr/include/c++/11/cctype \
   /usr/include/c++/11/cerrno \
+  /usr/include/c++/11/chrono \
   /usr/include/c++/11/clocale \
   /usr/include/c++/11/cmath \
   /usr/include/c++/11/compare \
@@ -132,6 +135,7 @@ Engine/CMakeFiles/Engine.dir/src/Game.cpp.o: /media/cel/lil\ bit\ o\ storag/dev/
   /usr/include/c++/11/cstdint \
   /usr/include/c++/11/cstdio \
   /usr/include/c++/11/cstdlib \
+  /usr/include/c++/11/ctime \
   /usr/include/c++/11/cwchar \
   /usr/include/c++/11/cwctype \
   /usr/include/c++/11/debug/assertions.h \
@@ -156,6 +160,7 @@ Engine/CMakeFiles/Engine.dir/src/Game.cpp.o: /media/cel/lil\ bit\ o\ storag/dev/
   /usr/include/c++/11/numbers \
   /usr/include/c++/11/ostream \
   /usr/include/c++/11/pstl/pstl_config.h \
+  /usr/include/c++/11/ratio \
   /usr/include/c++/11/stdexcept \
   /usr/include/c++/11/stdlib.h \
   /usr/include/c++/11/streambuf \
@@ -583,13 +588,9 @@ Engine/CMakeFiles/Engine.dir/src/Scene.cpp.o: /media/cel/lil\ bit\ o\ storag/dev
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/lzcntintrin.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
+/usr/lib/gcc/x86_64-linux-gnu/11/include/immintrin.h:
 
-/usr/include/c++/11/tr1/ell_integral.tcc:
-
-/usr/include/c++/11/tr1/gamma.tcc:
-
-/usr/include/c++/11/bits/stl_iterator.h:
+/usr/lib/gcc/x86_64-linux-gnu/11/include/hresetintrin.h:
 
 /usr/include/c++/11/streambuf:
 
@@ -598,6 +599,8 @@ Engine/CMakeFiles/Engine.dir/src/Scene.cpp.o: /media/cel/lil\ bit\ o\ storag/dev
 /usr/include/c++/11/stdlib.h:
 
 /usr/include/c++/11/stdexcept:
+
+/usr/include/c++/11/ratio:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/mm_malloc.h:
 
@@ -629,9 +632,13 @@ Engine/CMakeFiles/Engine.dir/src/Scene.cpp.o: /media/cel/lil\ bit\ o\ storag/dev
 
 /usr/include/SDL2/SDL_mutex.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
-
 /usr/include/c++/11/cstdint:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/gfniintrin.h:
+
+/usr/include/x86_64-linux-gnu/bits/iscanonical.h:
 
 /usr/include/c++/11/ext/alloc_traits.h:
 
@@ -643,6 +650,8 @@ Engine/CMakeFiles/Engine.dir/src/Scene.cpp.o: /media/cel/lil\ bit\ o\ storag/dev
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512ifmaintrin.h:
 
+/usr/lib/gcc/x86_64-linux-gnu/11/include/clzerointrin.h:
+
 /usr/include/c++/11/concepts:
 
 /usr/include/c++/11/cmath:
@@ -651,17 +660,9 @@ Engine/CMakeFiles/Engine.dir/src/Scene.cpp.o: /media/cel/lil\ bit\ o\ storag/dev
 
 /usr/include/c++/11/clocale:
 
-/usr/lib/gcc/x86_64-linux-gnu/11/include/amxint8intrin.h:
-
-/usr/include/c++/11/bits/uniform_int_dist.h:
-
 /usr/include/c++/11/ext/aligned_buffer.h:
 
 /usr/include/c++/11/bits/streambuf.tcc:
-
-/usr/include/c++/11/tr1/beta_function.tcc:
-
-/usr/include/SDL2/SDL_keycode.h:
 
 /usr/include/c++/11/bits/stl_tree.h:
 
@@ -678,6 +679,8 @@ Engine/CMakeFiles/Engine.dir/src/Scene.cpp.o: /media/cel/lil\ bit\ o\ storag/dev
 /usr/include/c++/11/istream:
 
 /usr/include/c++/11/bits/stl_map.h:
+
+/usr/include/c++/11/tr1/ell_integral.tcc:
 
 /usr/include/c++/11/bits/stl_construct.h:
 
@@ -733,6 +736,14 @@ Engine/CMakeFiles/Engine.dir/src/Scene.cpp.o: /media/cel/lil\ bit\ o\ storag/dev
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/avx5124vnniwintrin.h:
 
+/usr/include/c++/11/bits/hash_bytes.h:
+
+/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
+
+/usr/include/c++/11/bits/max_size_type.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h:
+
 /usr/include/SDL2/SDL_platform.h:
 
 /usr/include/SDL2/SDL_locale.h:
@@ -747,6 +758,8 @@ Engine/CMakeFiles/Engine.dir/src/Scene.cpp.o: /media/cel/lil\ bit\ o\ storag/dev
 
 /usr/include/c++/11/bits/exception_defines.h:
 
+/usr/include/c++/11/ctime:
+
 /usr/include/alloca.h:
 
 /usr/include/c++/11/bits/stringfwd.h:
@@ -756,12 +769,6 @@ Engine/CMakeFiles/Engine.dir/src/Scene.cpp.o: /media/cel/lil\ bit\ o\ storag/dev
 /usr/include/c++/11/ext/new_allocator.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/error_t.h:
-
-/usr/include/c++/11/bits/std_abs.h:
-
-/usr/include/c++/11/bits/invoke.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
 
 /usr/include/c++/11/bits/exception.h:
 
@@ -782,20 +789,6 @@ Engine/CMakeFiles/Engine.dir/src/Scene.cpp.o: /media/cel/lil\ bit\ o\ storag/dev
 /usr/include/c++/11/bits/locale_facets.h:
 
 /usr/include/SDL2/SDL_hidapi.h:
-
-/usr/include/c++/11/bits/locale_classes.tcc:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h:
-
-/usr/include/SDL2/SDL_power.h:
-
-/usr/include/SDL2/SDL_clipboard.h:
-
-/usr/include/SDL2/SDL_atomic.h:
-
-/usr/include/SDL2/SDL_scancode.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/avxvnniintrin.h:
 
 /usr/include/c++/11/bits/basic_ios.h:
 
@@ -821,19 +814,21 @@ Engine/CMakeFiles/Engine.dir/src/Scene.cpp.o: /media/cel/lil\ bit\ o\ storag/dev
 
 /usr/include/SDL2/SDL_gesture.h:
 
+/usr/include/c++/11/bits/stl_relops.h:
+
+/usr/include/c++/11/compare:
+
+/usr/include/locale.h:
+
 /usr/include/c++/11/cctype:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/rtmintrin.h:
 
 /media/cel/lil\ bit\ o\ storag/dev/c++/colon\ three/Engine/src/Game.hpp:
 
-/usr/include/c++/11/bits/hash_bytes.h:
+/usr/include/c++/11/bits/invoke.h:
 
-/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
-
-/usr/include/c++/11/bits/max_size_type.h:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h:
+/usr/include/c++/11/bits/std_abs.h:
 
 /usr/include/SDL2/SDL_assert.h:
 
@@ -857,9 +852,13 @@ Engine/CMakeFiles/Engine.dir/src/Scene.cpp.o: /media/cel/lil\ bit\ o\ storag/dev
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/avx5124fmapsintrin.h:
 
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vnniintrin.h:
+
 /usr/include/SDL2/SDL_main.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vnniintrin.h:
+/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
+
+/usr/include/Option.hpp:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/wmmintrin.h:
 
@@ -867,23 +866,21 @@ Engine/CMakeFiles/Engine.dir/src/Scene.cpp.o: /media/cel/lil\ bit\ o\ storag/dev
 
 /media/cel/lil\ bit\ o\ storag/dev/c++/colon\ three/Engine/src/Game.cpp:
 
+/usr/include/SDL2/SDL_atomic.h:
+
 /usr/include/c++/11/bits/concept_check.h:
 
-/media/cel/lil\ bit\ o\ storag/dev/c++/colon\ three/Engine/src/Input.cpp:
-
-/usr/include/c++/11/bits/allocator.h:
-
-/usr/include/SDL2/SDL_rwops.h:
+/usr/include/c++/11/chrono:
 
 /usr/include/c++/11/ext/atomicity.h:
 
 /usr/include/x86_64-linux-gnu/bits/cpu-set.h:
 
+/usr/include/c++/11/bits/parse_numbers.h:
+
 /usr/include/SDL2/SDL_audio.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/FILE.h:
-
-/usr/include/c++/11/tr1/exp_integral.tcc:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/cldemoteintrin.h:
 
@@ -931,15 +928,27 @@ Engine/CMakeFiles/Engine.dir/src/Scene.cpp.o: /media/cel/lil\ bit\ o\ storag/dev
 
 /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
 
+/usr/include/SDL2/SDL_clipboard.h:
+
+/usr/include/c++/11/bits/locale_classes.tcc:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h:
+
+/usr/include/SDL2/SDL_power.h:
+
+/usr/include/SDL2/SDL_scancode.h:
+
+/media/cel/lil\ bit\ o\ storag/dev/c++/colon\ three/Engine/src/Input.cpp:
+
+/usr/include/SDL2/SDL_rwops.h:
+
+/usr/include/c++/11/bits/allocator.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/avxvnniintrin.h:
+
 /usr/include/c++/11/bits/localefwd.h:
 
 /usr/include/SDL2/SDL_endian.h:
-
-/usr/include/c++/11/bits/stl_relops.h:
-
-/usr/include/c++/11/compare:
-
-/usr/include/locale.h:
 
 /usr/include/SDL2/SDL_timer.h:
 
@@ -1003,10 +1012,6 @@ Engine/CMakeFiles/Engine.dir/src/Scene.cpp.o: /media/cel/lil\ bit\ o\ storag/dev
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:
 
-/usr/include/c++/11/cstdlib:
-
-/usr/include/c++/11/tr1/bessel_function.tcc:
-
 /usr/include/c++/11/bits/string_view.tcc:
 
 /usr/include/c++/11/bits/basic_string.tcc:
@@ -1029,6 +1034,28 @@ Engine/CMakeFiles/Engine.dir/src/Scene.cpp.o: /media/cel/lil\ bit\ o\ storag/dev
 
 /usr/include/c++/11/bits/stl_iterator_base_types.h:
 
+/usr/include/c++/11/cstdlib:
+
+/usr/include/c++/11/tr1/bessel_function.tcc:
+
+/usr/include/SDL2/SDL_keycode.h:
+
+/usr/include/c++/11/tr1/beta_function.tcc:
+
+/usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
+
+/usr/include/c++/11/bits/uniform_int_dist.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/amxint8intrin.h:
+
+/usr/include/c++/11/tr1/exp_integral.tcc:
+
+/usr/include/c++/11/bits/stl_iterator.h:
+
+/usr/include/c++/11/tr1/gamma.tcc:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
+
 /usr/include/SDL2/SDL_error.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512bwintrin.h:
@@ -1044,8 +1071,6 @@ Engine/CMakeFiles/Engine.dir/src/Scene.cpp.o: /media/cel/lil\ bit\ o\ storag/dev
 /usr/include/c++/11/tr1/hypergeometric.tcc:
 
 /usr/include/c++/11/tr1/riemann_zeta.tcc:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/hresetintrin.h:
 
 /usr/include/c++/11/ext/string_conversions.h:
 
@@ -1084,8 +1109,6 @@ Engine/CMakeFiles/Engine.dir/src/Scene.cpp.o: /media/cel/lil\ bit\ o\ storag/dev
 /usr/include/stdio.h:
 
 /usr/include/x86_64-linux-gnu/bits/fp-fast.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/immintrin.h:
 
 /usr/include/stdlib.h:
 
@@ -1241,12 +1264,6 @@ Engine/CMakeFiles/Engine.dir/src/Scene.cpp.o: /media/cel/lil\ bit\ o\ storag/dev
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h:
-
-/usr/include/x86_64-linux-gnu/bits/iscanonical.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/gfniintrin.h:
-
 /usr/include/x86_64-linux-gnu/sys/cdefs.h:
 
 /usr/include/x86_64-linux-gnu/sys/single_threaded.h:
@@ -1278,7 +1295,5 @@ Engine/CMakeFiles/Engine.dir/src/Scene.cpp.o: /media/cel/lil\ bit\ o\ storag/dev
 /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vpopcntdqintrin.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/bmiintrin.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/clzerointrin.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h:
