@@ -8,16 +8,16 @@ class Timer {
 
   public:
     Timer();
-    // elapsed time in nano-seconds
+    // Elapsed time in nanoseconds
     unsigned long long elapsed_ns();
-    // elapsed time in micro-seconds
+    // Elapsed time in microseconds
     unsigned long long elapsed_mcs();
-    // elapsed time in milli-seconds
+    // Elapsed time in milliseconds
     unsigned long long elapsed_mls();
-    // elapsed time in seconds
+    // Elapsed time in seconds
     unsigned long long elapsed_s();
 
-    // start timeer again
+    // Start timer again
     void reset();
 };
 

@@ -13,10 +13,10 @@ class TestSceneOne : public Engine::Scene {
 
   public:
     void update(double dt);
-    void fixed_update() {};
+    void fixed_update(); 
 
     void render() ;
 
     void load();
-    void unload() {}
+    void unload() ;
 };

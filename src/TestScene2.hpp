@@ -10,7 +10,7 @@ class TestSceneTwo : public Engine::Scene {
   public:
     void update(double dt) {
         if (Engine::game->input.isKeyDown(SDLK_SPACE)) {
-            Engine::game->switchScene("TestScene1");
+            Engine::game->switchScene("TestScene1").unwrap();
         };
     }
     void fixed_update() {};
