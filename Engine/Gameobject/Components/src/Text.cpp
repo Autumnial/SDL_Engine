@@ -46,15 +46,18 @@ void Text::update() {
         auto f = font.unwrap_or(owner->scene->game()->current_font.unwrap());
         TTF_SetFontSize(f, size);
 
+
         surf = TTF_RenderText_Solid(f, text.c_str(), col);
 
         if (!surf) {
             std::cout << TTF_GetError() << std::endl;
         }
+        SDL_DestroyTexture(tex);
 
         tex =
             SDL_CreateTextureFromSurface(owner->scene->game()->renderer, surf);
 
+        SDL_FreeSurface(surf);
         if (!tex) {
             std::cout << SDL_GetError() << std::endl;
         }

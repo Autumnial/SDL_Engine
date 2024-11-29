@@ -27,7 +27,7 @@ void TestSceneOne::update(double dt) {
 void TestSceneOne::load() {
 
     _game->add_font("free_sans",
-                   "/usr/share/fonts/truetype/freefont/FreeSans.ttf");
+                    "/usr/share/fonts/truetype/freefont/FreeSans.ttf");
 
     std::cout << "Test Scene 1\n";
     std::this_thread::sleep_for(std::chrono::milliseconds(100));
@@ -51,8 +51,8 @@ void TestSceneOne::load() {
     t->position.x = 100;
     t->position.y = 500;
 
-    //add_game_object(&sprite_test);
-   //add_game_object(&textObject);
+    add_game_object(&sprite_test);
+    add_game_object(&textObject);
 };
 
 void TestSceneOne::unload() { _game->destroy_font("free_sans"); }

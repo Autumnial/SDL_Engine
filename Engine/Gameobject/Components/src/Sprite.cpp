@@ -16,6 +16,7 @@
 namespace Engine::GO::Components {
 
 void Sprite::update() {
+    SDL_DestroyTexture(tex);
 
     tex = SDL_CreateTextureFromSurface(owner->scene->game()->renderer, surf);
 
