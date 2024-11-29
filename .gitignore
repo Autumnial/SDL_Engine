@@ -1,5 +1,6 @@
 build/
 .clang-format
-.cache/
-
+**cache/clangd
+*
+!.*
 **/CMakeFiles
