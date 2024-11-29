@@ -1,8 +1,9 @@
 #include "math.h"
 namespace Engine::Math {
-template <typename T> class Vector2 {
+template <typename T = float> class Vector2 {
 public:
   T x, y;
+
 
   Vector2(T x, T y) {
     this->x = x;

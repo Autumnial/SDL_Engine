@@ -11,10 +11,10 @@ class InputHandler {
 
     bool keys[SDL_NUM_SCANCODES] = {false};
 
-    void updateKey(SDL_KeyboardEvent key);
+    void update_key(SDL_KeyboardEvent key);
 
   public:
-    bool isKeyDown(SDL_KeyCode k);
-    bool isKeyDown(SDL_Scancode k);
+    bool is_key_down(SDL_KeyCode k);
+    bool is_key_down(SDL_Scancode k);
 };
 } // namespace Engine

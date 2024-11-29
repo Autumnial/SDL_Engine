@@ -1,21 +1,18 @@
 
-#include "Game.hpp"
+#include "Gameobject.hpp"
 #include "Scene.hpp"
 #include <unistd.h>
-#include "SDL2/SDL_ttf.h"
 
-extern Engine::Game *Engine::game;
 
 class TestSceneOne : public Engine::Scene {
     private:
-        TTF_Font *font; 
         int fps; 
+        Engine::GO::GameObject sprite_test; 
+        Engine::GO::GameObject textObject; 
 
   public:
     void update(double dt);
     void fixed_update(); 
-
-    void render() ;
 
     void load();
     void unload() ;

@@ -8,18 +8,11 @@
 class TestSceneTwo : public Engine::Scene {
 
   public:
-    void update(double dt) {
-        if (Engine::game->input.isKeyDown(SDLK_SPACE)) {
-            Engine::game->switchScene("TestScene1").unwrap();
-        };
-    }
-    void fixed_update() {};
+    void update(double dt);
+    void fixed_update();
 
-    void load() {
-        std::cout << "Test Scene 2\n";
-        sleep(1);
-    };
-    void unload() {}
+    void load();
+    void unload();
 
-    void render() {}
+    void _render();
 };

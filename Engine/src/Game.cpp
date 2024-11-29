@@ -1,3 +1,7 @@
+#include <SDL2/SDL_image.h>
+namespace Engine {
+class Game;
+}
 #include "Game.hpp"
 #include <Option.hpp>
 #include <Result.hpp>
@@ -10,7 +14,9 @@
 #include <SDL2/SDL_render.h>
 #include <SDL2/SDL_surface.h>
 #include <SDL2/SDL_ttf.h>
+#include <SDL2/SDL_video.h>
 #include <cmath>
+#include <cstddef>
 #include <exception>
 #include <iostream>
 #include <ostream>
@@ -19,22 +25,18 @@
 
 namespace Engine {
 
-Game *game;
-
-Game::Game(std::string title) : Game::Game(title, 800, 800){};
+Game::Game(std::string title) : Game::Game(title, 800, 800) {};
 
 Game::Game(std::string title, int width) : Game::Game(title, width, width) {}
 
 Game::Game(std::string title, int width, int height) {
-    game = this;
-
     if (SDL_Init(SDL_INIT_VIDEO) < 0) {
         // TODO:
         std::cout << "SDL Error: " << SDL_GetError() << std::endl;
         exit(-1);
     }
 
-    SDL_SetHint(SDL_HINT_RENDER_SCALE_QUALITY, "2");
+    SDL_SetHint(SDL_HINT_RENDER_SCALE_QUALITY, "0");
 
     window = SDL_CreateWindow(title.c_str(), 0, 0, width, height, 0);
     if (window == NULL) {
@@ -42,7 +44,7 @@ Game::Game(std::string title, int width, int height) {
         exit(-2);
     }
 
-    SDL_CreateRenderer(window, 0, 0);
+    SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED);
     renderer = SDL_GetRenderer(window);
 
     if (renderer == NULL) {
@@ -54,6 +56,12 @@ Game::Game(std::string title, int width, int height) {
         std::cout << "SDL_TTF failed to init. exiting...";
         SDL_Quit();
         exit(-3);
+    }
+
+    if (IMG_Init(IMG_INIT_PNG) < 0) {
+        std::cout << "SDL_IMG failed with error: " << IMG_GetError()
+                  << ". exiting...";
+        exit(-1);
     }
 
     surf = SDL_GetWindowSurface(window);
@@ -73,24 +81,22 @@ void Game::run() {
 
         SDL_RenderClear(renderer);
 
-        SDL_FillRect(surf, NULL, SDL_MapRGB(surf->format, 255, 255, 255));
-        SDL_Rect rect = SDL_Rect{300, 300, 200, 200};
-        SDL_FillRect(surf, &rect, SDL_MapRGB(surf->format, 255, 0, 124));
         while (SDL_PollEvent(&e)) {
             if (e.type == SDL_QUIT) {
                 quit = true;
             }
 
             if (e.type == SDL_KEYUP || e.type == SDL_KEYDOWN) {
-                input.updateKey(e.key);
+                input.update_key(e.key);
             }
-            if (game->input.isKeyDown(SDLK_ESCAPE)) {
+            if (input.is_key_down(SDLK_ESCAPE)) {
                 quit = true;
             }
         }
 
+        active_scene.expect("No Scene Set")->go_update();
         active_scene.expect("No Scene Set")->update(1. / dt);
-        active_scene.expect("No Scene Set")->render();
+        active_scene.expect("No Scene Set")->_render();
 
         //        SDL_UpdateWindowSurface(window);
         SDL_RenderPresent(renderer);
@@ -99,15 +105,18 @@ void Game::run() {
     }
 }
 
-void Game::addScene(std::string title, Scene *scene) {
+void Game::add_scene(std::string title, Scene *scene) {
+
+    scene->_game = this;
+
     scenes.emplace(title, scene);
 
     if (active_scene.is_none()) {
-        switchScene(title).unwrap();
+        switch_scene(title).unwrap();
     }
 }
 
-Result<void *, not_found> Game::switchScene(std::string title) {
+Result<void *, not_found> Game::switch_scene(std::string title) {
     Scene *new_scene;
 
     try {
@@ -129,7 +138,7 @@ Result<void *, not_found> Game::switchScene(std::string title) {
     return Result<void *, not_found>::Ok(nullptr);
 }
 
-Result<void *, font_not_found> Game::addFont(std::string title,
+Result<void *, font_not_found> Game::add_font(std::string title,
                                              std::string path, int pt_size) {
 
     TTF_Font *font = TTF_OpenFont(path.c_str(), pt_size);
@@ -147,7 +156,7 @@ Result<void *, font_not_found> Game::addFont(std::string title,
     return Result<void *, font_not_found>::Ok(nullptr);
 };
 
-Result<void *, not_found> Game::setFont(std::string title) {
+Result<void *, not_found> Game::set_font(std::string title) {
     try {
         current_font = Option<TTF_Font *>::Some(fonts.at(title));
         return Result<void *, not_found>::Ok(nullptr);
@@ -156,22 +165,29 @@ Result<void *, not_found> Game::setFont(std::string title) {
     }
 }
 
-void Game::destroyFont(std::string title) {
+void Game::destroy_font(std::string title) {
 
     try {
         auto font = fonts.find(title);
         TTF_CloseFont(font->second);
         fonts.erase(font);
+        current_font = Option<TTF_Font *>::None();
 
     } catch (std::exception e) {
-        // warn user, but nothing more. this is a very recoverable state.
+        // Warn user, but nothing more. Failing to unload a font is not
+        // a terminal error.
         std::cout << "WARN: Tried to delete font `" << title
                   << "` which is not a loaded font. ";
         return;
     }
 }
 
-Result<void *, render_error *> Game::drawText(int x, int y, std::string text,
+Result<void *, not_found> Game::set_font_size(int pt_size) {
+    TTF_SetFontSize(this->current_font.unwrap(), pt_size);
+    return Result<void *, not_found>::Ok(NULL);
+}
+
+Result<void *, render_error *> Game::draw_text(int x, int y, std::string text,
                                               SDL_Color text_col) {
     auto         font = current_font.unwrap();
     SDL_Surface *text_surface =
@@ -188,12 +204,13 @@ Result<void *, render_error *> Game::drawText(int x, int y, std::string text,
         return Result<void *, render_error *>::Err(new surface_to_texture());
     }
 
-    SDL_Rect text_rec = {x, y, text_surface->w, text_surface->h};
-    SDL_RenderCopy(renderer, text_texture, NULL, &text_rec);
-    SDL_FreeSurface(text_surface); 
-    SDL_DestroyTexture(text_texture); 
-    return Result<void *, render_error *>::Ok(nullptr);
+    SDL_Rect text_rec = {x, y, (text_surface->w), (text_surface->h)};
+    //    SDL_Rect text_rec = {x, y, 200, 200};
 
+    SDL_RenderCopy(renderer, text_texture, NULL, &text_rec);
+    SDL_FreeSurface(text_surface);
+    SDL_DestroyTexture(text_texture);
+    return Result<void *, render_error *>::Ok(nullptr);
 };
 
 } // namespace Engine
